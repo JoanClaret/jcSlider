@@ -1,8 +1,11 @@
 A responsive slider jQuery plugin with CSS animations
 ========================================
-A responsive slider jQuery plugin with CSS animations from [animate.css](https://daneden.github.io/animate.css/)
+CSS animations from [animate.css](https://daneden.github.io/animate.css/)
 
 
+Online demo
+-----------
+[Visit plugin website](http://joanclaret.github.io/slider-jquery-plugin/)
 
 How it works?
 -----------
