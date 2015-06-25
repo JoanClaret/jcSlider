@@ -15,6 +15,7 @@ body{
 }
 body *{
     box-sizing:border-box;
+
 }
 .wrap{
     max-width: 1200px;
@@ -61,6 +62,7 @@ section{
 }
 .example{
     font-size: 25px;
+    overflow:hidden;
 }
 .example .paused{
     color:#398db4;
