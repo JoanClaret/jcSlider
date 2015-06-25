@@ -43,14 +43,34 @@
                     </li>
                 </ul>
                 <!-- Slider end -->
+
+                <!-- Slider start -->
+                <ul class="jc-slider2">
+                    <li class="jc-animation">
+                        <img src="img/1.jpg" alt="1" />
+                    </li>
+                    <li class="jc-animation">
+                        <img src="img/2.jpg" alt="2" />
+                    </li>
+                    <li class="jc-animation">
+                        <img src="img/3.jpg" alt="3" />
+                    </li>
+                </ul>
+                <!-- Slider end -->
             </section>
         </main>
     </body>
     <script type="text/javascript">
         $(document).ready(function(){
+
             $('.jc-slider').jcSlider({
                 animationIn: "bounceInRight",
                 animationOut: "bounceOutLeft"
+            });
+
+            $('.jc-slider2').jcSlider({
+                animationIn: "zoomInUp",
+                animationOut: "flipOutX"
             });
         });
     </script>
