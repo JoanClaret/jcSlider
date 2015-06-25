@@ -10,7 +10,7 @@ Online demo
 How it works?
 -----------
 
-### Instalation
+### Installation
 
 Incluide the following files in the head section of your html file
 
