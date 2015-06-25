@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS slider animation</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+        <!-- jQuery library (served from Google) -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <!-- Slider Javascript file -->
+        <script src="js/jcSlider.js"></script>
+        <!-- animate CSS stylesheet library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
+    </head>
+    <body>
+        <header>
+            <h1>Responsive CSS Slider with animate.css</h1>
+            <a href="https://github.com/JoanClaret/Flexbox-examples" title="View github repository">View github repository</a>
+        </header>
+        <main class="">
+            <section class="example">
+                <h2>Example:    </h2>
+                <p class="paused">PAUSED</p>
+                <!-- Slider start -->
+                <ul class="jc-slider">
+                    <li class="jc-animation">
+                        <div class="wrap">
+                            My life fades. The vision dims. All that remains are memories. I remember a time of chaos... ruined dreams... this wasted land. But most of all, I remember The Road Warrior. The man we called "Max." To understand who he was, you have to go back to another time...
+                        </div>
+                    </li>
+                    <li class="jc-animation">
+                        <div class="wrap">
+                            I'm sorry, did I break your concentration? I didn't mean to do that. Please, continue, you were saying something about best intentions. What's the matter? Oh, you were finished! Well, allow me to retort. What does Marsellus Wallace look like?
+                        </div>
+                    </li>
+                    <li class="jc-animation">
+                        <div class="wrap">
+                            Way out west there was this fella... fella I wanna tell ya about. Fella by the name of Jeff Lebowski. At least that was the handle his loving parents gave him, but he never had much use for it himself. Mr. Lebowski, he called himself "The Dude"
+                        </div>
+                    </li>
+                </ul>
+                <!-- Slider end -->
+            </section>
+        </main>
+    </body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.jc-slider').jcSlider({
+                animationIn: "bounceInRight",
+                animationOut: "bounceOutLeft"
+            });
+        });
+    </script>
+    <a href="https://github.com/joanclaret"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>
+
+   
+    
+
+</html>
