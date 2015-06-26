@@ -19,7 +19,7 @@
     "responsive",
     "css"
   ],
-  "license": "Apache-2.0",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",

@@ -30,7 +30,7 @@
 
 ;(function($, document, window, undefined) {
 
-    "use strict";
+    'use strict';
 
     $.fn.jcSlider = function(options) {
 
@@ -42,8 +42,8 @@
         // get settings
         var settings = $.extend({
             // default settings
-            animationIn: "bounceInRight",
-            animationOut: "bounceOutLeft",
+            animationIn: 'bounceInRight',
+            animationOut: 'bounceOutLeft',
             stopOnHover: true
         }, options );
 
@@ -56,19 +56,19 @@
 
 
         // Detect when animations (keyframes) end
-        function whichAnimationEvent(){
+        function whichAnimationEvent() {
           var t,
-              el = document.createElement("fakeelement");
+              el = document.createElement('fakeelement');
 
           var animations = {
-            "animation"      : "animationend",
-            "OAnimation"     : "oAnimationEnd",
-            "MozAnimation"   : "animationend",
-            "WebkitAnimation": "webkitAnimationEnd"
+            'animation'      : 'animationend',
+            'OAnimation'     : 'oAnimationEnd',
+            'MozAnimation'   : 'animationend',
+            'WebkitAnimation': 'webkitAnimationEnd'
           };
 
-          for (t in animations){
-            if (el.style[t] !== undefined){
+          for (t in animations) {
+            if (el.style[t] !== undefined) {
               return animations[t];
             }
           }
@@ -77,18 +77,18 @@
 
 
         // main function
-        var jcSliderAnimation = function(){
+        var jcSliderAnimation = function() {
 
-            jcSliderInterval = setInterval(function() { 
+            jcSliderInterval = setInterval(function() {
 
                 animationItem.eq(animationCurrentItem)
                 .removeClass(animateIn) // reset enter animation
                 .addClass(animateOut)   // exit animation
-                
+
                 // when exit animation is finished, move next item
                .one(animationEvent,
 
-                    function () {
+                    function() {
 
                         // move current item
                         animationItem.eq(animationCurrentItem)
@@ -97,7 +97,7 @@
 
                         // select next item
                         animationCurrentItem ++;
-                        if (animationCurrentItem == animationItemsLength){
+                        if (animationCurrentItem == animationItemsLength) {
                             animationCurrentItem = 0;
                         }
 
@@ -108,27 +108,23 @@
 
                     });
 
-            },  4000);
+            }, 4000);
         };
 
         // Initialise the testimonial animation function
-        jcSliderAnimation(); 
+        jcSliderAnimation();
 
-        if(settings.stopOnHover === true){
+        if(settings.stopOnHover === true) {
 
             // Stop the animation on hover
             $this.hover(
-                function(){ 
-                    
+                function() {
                         clearInterval(jcSliderInterval);
                 },
                 function(){
                     jcSliderAnimation();
-            });
+                });
         }
-        
     };
-
 })(window.jQuery || window.Zepto || window.$, document, window);
-
 // Pending Zepto support
