@@ -5,12 +5,35 @@ Animations from [animate.css](https://daneden.github.io/animate.css/)
 
 Online demo
 -----------
+
 [Visit plugin website](http://joanclaret.github.io/jcSlider)
 
-How it works?
+
+What's the diference with other sliders?
 -----------
 
-### Installation
+This plugin does not use jQuery animations. Only CSS3, because [performance matters](http://perf.rocks/).
+No need to calculate distances, sizes or whatever, only add and remove classes to elements to animate them. It couldn't be easier!
+
+
+
+Installation
+-----------
+
+Using bower
+
+```bash
+bower install --save jcslider
+```
+
+Using npm
+
+```bash
+npm install jcslider
+```
+
+Usage
+------
 
 Incluide the following files in the head section of your html file
 
@@ -19,7 +42,7 @@ Incluide the following files in the head section of your html file
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
 <!-- Slider Javascript file -->
-<script src="js/jcSlider.js"></script>
+<script src="jcSlider.js"></script>
 
 <!-- animate CSS stylesheet library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
@@ -35,7 +58,7 @@ $(document).ready(function(){
 });
 ```
 
-With options
+Available options
 
 ```javascript
 $(document).ready(function(){
