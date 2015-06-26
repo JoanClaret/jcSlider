@@ -5,6 +5,9 @@ ul *{
     margin:0;
     padding:0;
 }
+img{
+    max-width:100%;
+}
 body{
     background-color:#ccc;
     font-family:'Open Sans';
@@ -23,9 +26,10 @@ body *{
 }
 ul{
     list-style: none;
+    padding:0;
 }
 header{
-    background:transparent url('img/header.jpg') center -100px no-repeat;
+    background:transparent url('../img/header.jpg') center -100px no-repeat;
     padding:50px 30px;
     text-align:center;
     color:#fff;
@@ -82,6 +86,7 @@ section{
     font-size: 22px;
     font-family:oswald;
     overflow:hidden;
+    padding:0 15px;
 }
 .example li{
         color:#787878;
