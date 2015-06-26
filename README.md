@@ -44,7 +44,7 @@ $(document).ready(function(){
 });
 ```
 
-With options
+Available options
 
 ```javascript
 $(document).ready(function(){
