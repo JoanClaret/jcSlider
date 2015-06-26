@@ -60,7 +60,7 @@ $(document).ready(function(){
 </ul>
 ```
 
-### Animations available
+### Available animations
 
 * `bounce`
 * `flash`
