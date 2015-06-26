@@ -7,21 +7,18 @@ Online demo
 -----------
 [Visit plugin website](http://joanclaret.github.io/jcSlider)
 
-How it works?
------------
 
 Installation
 -----------
 
-## Using bower
+### Using bower
 
 ```bash
 bower install --save jcslider
 ```
 
 
-Usage
------
+### Usage
 
 Incluide the following files in the head section of your html file
 
