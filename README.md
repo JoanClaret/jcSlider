@@ -49,7 +49,7 @@ or [download the plugin](https://github.com/JoanClaret/jcSlider/archive/master.z
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
 <!-- Slider Javascript file -->
-<script src="jcSlider.js"></script>
+<script src="jquery.jcslider.js"></script>
 
 <!-- animate CSS stylesheet library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
