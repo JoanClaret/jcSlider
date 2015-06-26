@@ -18,7 +18,8 @@ bower install --save jcslider
 ```
 
 
-### Usage
+Usage
+------
 
 Incluide the following files in the head section of your html file
 
