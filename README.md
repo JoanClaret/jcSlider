@@ -3,11 +3,14 @@ A responsive slider jQuery plugin with CSS animations
 CSS animations from [animate.css](https://daneden.github.io/animate.css/)
 
 
+Online demo
+-----------
+[Visit plugin website](http://joanclaret.github.io/slider-jquery-plugin/)
 
 How it works?
 -----------
 
-### Instalation
+### Installation
 
 Incluide the following files in the head section of your html file
 
@@ -24,20 +27,22 @@ Incluide the following files in the head section of your html file
 
 ### Javascript initialization
 
-With default animations
+Default initialization
 
 ```javascript
 $(document).ready(function(){
     $('.jc-slider').jcSlider();
 });
 ```
-With custom animations
+
+With options
 
 ```javascript
 $(document).ready(function(){
     $('.jc-slider').jcSlider({
         animationIn: "bounceInRight",
-        animationOut: "bounceOutLeft"
+        animationOut: "bounceOutLeft", 
+        stopOnHover: false // true by default
     });
 });
 ```
@@ -55,7 +60,7 @@ $(document).ready(function(){
 </ul>
 ```
 
-### Animation options
+### Available animations
 
 * `bounce`
 * `flash`
