@@ -4,14 +4,13 @@
         <title>jcSlider: A responsive slider jQuery plugin with CSS animations from animate.css</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-        <link href="css/styles.css" rel="stylesheet" type="text/css" />
-        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <!-- CSS stylesheet for example -->
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
 
-        <!-- jQuery library (served from Google) -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <!-- Slider Javascript file -->
-        <script src="jquery.jcslider.js"></script>
+        <!-- CSS stylesheet for jcSlider -->
+        <link rel="stylesheet" href="css/jcslider.css">
         <!-- animate CSS stylesheet library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
     </head>
@@ -21,9 +20,9 @@
             <p> with CSS animations from animate.css</p>
             <a href="https://github.com/JoanClaret/slider-jquery-plugin" title="View github repository">View github repository</a>
         </header>
-        <main class="">
+        <main>
             <section class="example">
-                <h2>Example 1:    </h2>
+                <h2>Example 1:</h2>
                 <!-- Slider start -->
                 <ul class="jc-slider">
                     <li class="jc-animation">
@@ -43,43 +42,43 @@
                     </li>
                 </ul>
                 <!-- Slider end -->
-                <h2>Example 2:    </h2>
+                <h2>Example 2:</h2>
                 <!-- Slider start -->
                 <ul class="jc-slider2">
                     <li class="jc-animation">
-                        <img src="img/1.jpg" alt="1" />
+                        <img src="img/1.jpg" alt="1">
                     </li>
                     <li class="jc-animation">
-                        <img src="img/2.jpg" alt="2" />
+                        <img src="img/2.jpg" alt="2">
                     </li>
                     <li class="jc-animation">
-                        <img src="img/3.jpg" alt="3" />
+                        <img src="img/3.jpg" alt="3">
                     </li>
                 </ul>
                 <!-- Slider end -->
             </section>
         </main>
+
+        <!-- jQuery library (served from Google) -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <!-- Slider Javascript file -->
+        <script src="jquery.jcslider.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $('.jc-slider').jcSlider({
+                    animationIn: 'bounceInRight',
+                    animationOut: 'bounceOutLeft',
+                    stopOnHover: false
+                });
+
+                $('.jc-slider2').jcSlider({
+                    animationIn: 'zoomInUp',
+                    animationOut: 'flipOutX',
+                    stopOnHover: false
+                });
+            });
+        </script>
+        <a href="https://github.com/joanclaret"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>
     </body>
-    <script type="text/javascript">
-        $(document).ready(function(){
-
-            $('.jc-slider').jcSlider({
-                animationIn: "bounceInRight",
-                animationOut: "bounceOutLeft",
-                stopOnHover: false
-            });
-
-            $('.jc-slider2').jcSlider({
-                animationIn: "zoomInUp",
-                animationOut: "flipOutX",
-                stopOnHover: false
-
-            });
-        });
-    </script>
-    <a href="https://github.com/joanclaret"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>
-
-   
-    
-
 </html>
