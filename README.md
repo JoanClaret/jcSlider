@@ -25,6 +25,8 @@ No need to calculate distances, sizes or whatever, only add and remove classes t
 Installation
 -----------
 
+### 1. Grab a copy of the plugin
+
 Using bower
 
 ```bash
@@ -37,10 +39,10 @@ Using npm
 npm install jcslider
 ```
 
-Usage
-------
+or [download the plugin](https://github.com/JoanClaret/jcSlider/archive/master.zip) from GitHub
 
-Incluide the following files in the head section of your html file
+
+### 2. Load the required files
 
 ```html
 <!-- jQuery library (served from Google) -->
@@ -53,7 +55,21 @@ Incluide the following files in the head section of your html file
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
 ```
 
-### Javascript initialization
+
+### 3. Create the HTML markup
+
+```html
+<ul class="jc-slider">
+    <li class="jc-animation">
+        [...]
+    </li>
+    <li class="jc-animation">
+        [...]
+    </li>
+</ul>
+```
+
+### 4. Initialize the plugin
 
 Default initialization
 
@@ -73,19 +89,6 @@ $(document).ready(function(){
         stopOnHover:    false // true by default
     });
 });
-```
-
-### Layout
-
-```html
-<ul class="jc-slider">
-    <li class="jc-animation">
-        [...]
-    </li>
-    <li class="jc-animation">
-        [...]
-    </li>
-</ul>
 ```
 
 ### Available animations
