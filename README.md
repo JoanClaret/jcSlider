@@ -16,9 +16,9 @@ This plugin does not use jQuery animations. Only CSS3, because [performance matt
 No need to calculate distances, sizes or whatever, only add and remove classes to elements to animate them. It couldn't be easier!
 
 * Only 1 js file
-* < 1Kb minified
+* 1Kb minified
 * Responsive
-* +50 effects
+* Multiple effects (more than 60!)
 * Works with html, images... whatever you want to animate
 
 
