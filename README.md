@@ -2,15 +2,19 @@ A responsive slider jQuery plugin with CSS animations
 ========================================
 Animations from [animate.css](https://daneden.github.io/animate.css/)
 
+
+Online demo
+-----------
+
+[Visit plugin website](http://joanclaret.github.io/jcSlider)
+
+
 What's the diference with other sliders?
 -----------
 
 This plugin does not use jQuery animations. Only CSS3, because [performance matters](http://perf.rocks/).
 No need to calculate distances, sizes or whatever, only add and remove classes to elements to animate them. It couldn't be easier!
 
-Online demo
------------
-[Visit plugin website](http://joanclaret.github.io/jcSlider)
 
 
 Installation
