@@ -9,7 +9,7 @@ Online demo
 [Visit plugin website](http://joanclaret.github.io/jcSlider)
 
 
-What's the diference with other sliders?
+What's the difference with other sliders?
 -----------
 
 This plugin does not use jQuery animations. Only CSS3, because [performance matters](http://perf.rocks/).
@@ -63,9 +63,9 @@ Available options
 ```javascript
 $(document).ready(function(){
     $('.jc-slider').jcSlider({
-        animationIn: "bounceInRight",
-        animationOut: "bounceOutLeft", 
-        stopOnHover: false // true by default
+        animationIn:    "bounceInRight",
+        animationOut:   "bounceOutLeft", 
+        stopOnHover:    false // true by default
     });
 });
 ```
