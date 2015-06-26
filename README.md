@@ -10,7 +10,18 @@ Online demo
 How it works?
 -----------
 
-### Installation
+Installation
+-----------
+
+## Using bower
+
+```bash
+bower install --save jcslider
+```
+
+
+Usage
+-----
 
 Incluide the following files in the head section of your html file
 
@@ -19,7 +30,7 @@ Incluide the following files in the head section of your html file
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
 <!-- Slider Javascript file -->
-<script src="js/jcSlider.js"></script>
+<script src="jcSlider.js"></script>
 
 <!-- animate CSS stylesheet library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
