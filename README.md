@@ -27,7 +27,7 @@ Incluide the following files in the head section of your html file
 
 ### Javascript initialization
 
-With default animations
+Default initialization
 
 ```javascript
 $(document).ready(function(){
@@ -35,7 +35,7 @@ $(document).ready(function(){
 });
 ```
 
-Options
+With options
 
 ```javascript
 $(document).ready(function(){
