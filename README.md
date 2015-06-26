@@ -34,13 +34,15 @@ $(document).ready(function(){
     $('.jc-slider').jcSlider();
 });
 ```
-With custom animations
+
+Options
 
 ```javascript
 $(document).ready(function(){
     $('.jc-slider').jcSlider({
         animationIn: "bounceInRight",
-        animationOut: "bounceOutLeft"
+        animationOut: "bounceOutLeft", 
+        stopOnHover: false // true by default
     });
 });
 ```
@@ -58,7 +60,7 @@ $(document).ready(function(){
 </ul>
 ```
 
-### Animation options
+### Animations available
 
 * `bounce`
 * `flash`
