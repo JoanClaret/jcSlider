@@ -15,24 +15,38 @@ body{
 }
 body *{
     box-sizing:border-box;
-
 }
 .wrap{
-    max-width: 1200px;
+    max-width: 1000px;
     margin:0 auto;
     padding:20px;
 }
 ul{
     list-style: none;
 }
-
 header{
-    background:transparent url('header.jpg') center top no-repeat;
-    padding:90px 30px;
+    background:transparent url('img/header.jpg') center -100px no-repeat;
+    padding:50px 30px;
     text-align:center;
+    color:#fff;
+}
+header h1{
+    margin-bottom:10px;
+}
+header p{
+    margin-bottom:20px;
+    font-family:Oswald;
+    font-size:30px;
 }
 header a{
     color:#fff;
+    text-decoration:none;
+    border:1px solid #fff;
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:5px;
+    background-color:rgba(255,255,255,.1);
+    margin-bottom:40px
 }
 h1{
     color:#fff;
@@ -50,6 +64,10 @@ h1, h2, h3, h4{
     font-weight:normal;
     text-transform: uppercase;
 }
+
+ul{
+    margin-top:0;
+}
 span.notes{
     color:#19AFE6;
 }
@@ -61,8 +79,12 @@ section{
     margin-bottom:60px;
 }
 .example{
-    font-size: 25px;
+    font-size: 22px;
+    font-family:oswald;
     overflow:hidden;
+}
+.example li{
+        color:#787878;
 }
 .example .paused{
     color:#398db4;
@@ -72,7 +94,6 @@ section{
     width: 200px;
     margin-right:-100px;
 }
-
 
 /**
  * Slider CSS
