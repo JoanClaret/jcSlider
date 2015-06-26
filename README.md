@@ -15,6 +15,11 @@ What's the difference with other sliders?
 This plugin does not use jQuery animations. Only CSS3, because [performance matters](http://perf.rocks/).
 No need to calculate distances, sizes or whatever, only add and remove classes to elements to animate them. It couldn't be easier!
 
+* Only 1 js file
+* < 1Kb minified
+* Responsive
+* +50 effects
+* Works with html, images... whatever you want to animate
 
 
 Installation
