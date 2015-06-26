@@ -4,7 +4,6 @@
  * @copyright Copyright 2013-2015 Joan claret
  * @license   MIT
  * @author    Joan Claret Teruel <dpam23 at gmail dot com>
- * @version   0.0.3
  *
  * Licensed under The MIT License (MIT).
  * Copyright (c) Joan Claret Teruel <dpam23 at gmail dot com>
