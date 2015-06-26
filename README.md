@@ -11,13 +11,13 @@ Online demo
 Installation
 -----------
 
-### Using bower
+Using bower
 
 ```bash
 bower install --save jcslider
 ```
 
-### Using npm
+Using npm
 
 ```bash
 npm install jcslider
