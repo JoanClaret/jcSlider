@@ -111,7 +111,7 @@
             }, 4000);
         };
 
-        // Initialise the testimonial animation function
+        // Initialise the animation function
         jcSliderAnimation();
 
         if(settings.stopOnHover === true) {
