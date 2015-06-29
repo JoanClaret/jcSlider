@@ -84,9 +84,10 @@ Available options
 ```javascript
 $(document).ready(function(){
     $('.jc-slider').jcSlider({
-        animationIn:    "bounceInRight",
-        animationOut:   "bounceOutLeft", 
-        stopOnHover:    false // true by default
+        animationIn     : "bounceInRight",
+        animationOut    : "bounceOutLeft", 
+        stopOnHover     : false, // true by default
+        loop            : false // true by default
     });
 });
 ```

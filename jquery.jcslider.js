@@ -42,9 +42,10 @@
         // get settings
         var settings = $.extend({
             // default settings
-            animationIn: 'bounceInRight',
-            animationOut: 'bounceOutLeft',
-            stopOnHover: true
+            animationIn     : 'bounceInRight',
+            animationOut    : 'bounceOutLeft',
+            stopOnHover     : true,
+            loop            : false
         }, options );
 
         var animateOut = 'animated ' + settings.animationOut;
@@ -52,7 +53,7 @@
         var animationItem = $this.find('.jc-animation');
         var animationItemsLength = animationItem.length;
         var animationCurrentItem = 0;
-        var jcSliderInterval = '';
+        var jcSliderInterval = null;
 
 
         // Detect when animations (keyframes) end
@@ -80,6 +81,11 @@
         var jcSliderAnimation = function() {
 
             jcSliderInterval = setInterval(function() {
+                
+                // stop animation if loop is false and we are on the last image
+                if (settings.loop === false && animationCurrentItem == (animationItemsLength -2)) {
+                    clearInterval(jcSliderInterval);
+                }
 
                 animationItem.eq(animationCurrentItem)
                 .removeClass(animateIn) // reset enter animation
@@ -119,7 +125,7 @@
             // Stop the animation on hover
             $this.hover(
                 function() {
-                        clearInterval(jcSliderInterval);
+                    clearInterval(jcSliderInterval);
                 },
                 function(){
                     jcSliderAnimation();
