@@ -14,13 +14,14 @@ img {
 }
 
 body {
-    background-color: #ccc;
+    background-color: #f1f1f1;
     font-family: 'Open Sans';
     color: #333;
     margin: 0;
     padding: 0;
     text-align: center;
 }
+
 
 .wrap {
     max-width: 1000px;
@@ -33,33 +34,6 @@ ul {
     padding: 0;
 }
 
-header {
-    background: transparent url('../img/header.jpg') center -100px no-repeat;
-    padding: 50px 30px;
-    text-align: center;
-    color: #fff;
-}
-
-header h1 {
-    margin-bottom: 10px;
-}
-
-header p {
-    margin-bottom: 20px;
-    font-family: Oswald;
-    font-size: 30px;
-}
-
-header a {
-    color: #fff;
-    text-decoration: none;
-    border: 1px solid #fff;
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: rgba(255,255,255,.1);
-    margin-bottom: 40px;
-}
 
 h1 {
     color:#fff;
@@ -119,4 +93,10 @@ section {
     right: 50%;
     width: 200px;
     margin-right: -100px;
+}
+
+a.back{
+    color:#3498DB;
+    margin:20px;
+    display:inline-block;
 }
