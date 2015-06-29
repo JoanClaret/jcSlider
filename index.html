@@ -1,85 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>jcSlider: A responsive slider jQuery plugin with CSS animations from animate.css</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-        <link href="css/styles.css" rel="stylesheet" type="text/css" />
-        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jcslider by JoanClaret</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Jcslider</h1>
+      <h2 class="project-tagline">A responsive slider jQuery plugin with CSS animations</h2>
+      <a href="https://github.com/JoanClaret/jcSlider" class="btn">View on GitHub</a>
+      <a href="https://github.com/JoanClaret/jcSlider/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/JoanClaret/jcSlider/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-        <!-- jQuery library (served from Google) -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <!-- Slider Javascript file -->
-        <script src="jquery.jcslider.js"></script>
-        <!-- animate CSS stylesheet library -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
-    </head>
-    <body>
-        <header>
-            <h1>jcSlider: A responsive slider jQuery plugin</h1>
-            <p> with CSS animations from animate.css</p>
-            <a href="https://github.com/JoanClaret/slider-jquery-plugin" title="View github repository">View github repository</a>
-        </header>
-        <main class="">
-            <section class="example">
-                <h2>Example 1:    </h2>
-                <!-- Slider start -->
-                <ul class="jc-slider">
-                    <li class="jc-animation">
-                        <div class="wrap">
-                            My life fades. The vision dims. All that remains are memories. I remember a time of chaos... ruined dreams... this wasted land. But most of all, I remember The Road Warrior. The man we called "Max." To understand who he was, you have to go back to another time...
-                        </div>
-                    </li>
-                    <li class="jc-animation">
-                        <div class="wrap">
-                            I'm sorry, did I break your concentration? I didn't mean to do that. Please, continue, you were saying something about best intentions. What's the matter? Oh, you were finished! Well, allow me to retort. What does Marsellus Wallace look like?
-                        </div>
-                    </li>
-                    <li class="jc-animation">
-                        <div class="wrap">
-                            Way out west there was this fella... fella I wanna tell ya about. Fella by the name of Jeff Lebowski. At least that was the handle his loving parents gave him, but he never had much use for it himself. Mr. Lebowski, he called himself "The Dude"
-                        </div>
-                    </li>
-                </ul>
-                <!-- Slider end -->
-                <h2>Example 2:    </h2>
-                <!-- Slider start -->
-                <ul class="jc-slider2">
-                    <li class="jc-animation">
-                        <img src="img/1.jpg" alt="1" />
-                    </li>
-                    <li class="jc-animation">
-                        <img src="img/2.jpg" alt="2" />
-                    </li>
-                    <li class="jc-animation">
-                        <img src="img/3.jpg" alt="3" />
-                    </li>
-                </ul>
-                <!-- Slider end -->
-            </section>
-        </main>
-    </body>
-    <script type="text/javascript">
-        $(document).ready(function(){
+    <section class="main-content">
+      <h1>
+<a id="a-responsive-slider-jquery-plugin-with-css-animations" class="anchor" href="#a-responsive-slider-jquery-plugin-with-css-animations" aria-hidden="true"><span class="octicon octicon-link"></span></a>A responsive slider jQuery plugin with CSS animations</h1>
 
-            $('.jc-slider').jcSlider({
-                animationIn: "bounceInRight",
-                animationOut: "bounceOutLeft",
-                stopOnHover: false
-            });
+<p>Animations from <a href="https://daneden.github.io/animate.css/">animate.css</a></p>
 
-            $('.jc-slider2').jcSlider({
-                animationIn: "zoomInUp",
-                animationOut: "flipOutX",
-                stopOnHover: false
+<h2>
+<a id="online-demo" class="anchor" href="#online-demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Online demo</h2>
 
-            });
-        });
-    </script>
-    <a href="https://github.com/joanclaret"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>
+<p><a href="http://joanclaret.github.io/jcSlider">Visit plugin website</a></p>
 
-   
-    
+<h2>
+<a id="whats-the-difference-with-other-sliders" class="anchor" href="#whats-the-difference-with-other-sliders" aria-hidden="true"><span class="octicon octicon-link"></span></a>What's the difference with other sliders?</h2>
 
+<p>This plugin does not use jQuery animations. Only CSS3, because <a href="http://perf.rocks/">performance matters</a>.
+No need to calculate distances, sizes or whatever, only add and remove classes to elements to animate them. It couldn't be easier!</p>
+
+<ul>
+<li>Only 1 js file</li>
+<li>1Kb minified</li>
+<li>Responsive</li>
+<li>Multiple effects (more than 60!)</li>
+<li>Works with html, images... whatever you want to animate</li>
+</ul>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<h3>
+<a id="1-grab-a-copy-of-the-plugin" class="anchor" href="#1-grab-a-copy-of-the-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. Grab a copy of the plugin</h3>
+
+<p>Using bower</p>
+
+<div class="highlight highlight-bash"><pre>bower install --save jcslider</pre></div>
+
+<p>Using npm</p>
+
+<div class="highlight highlight-bash"><pre>npm install jcslider</pre></div>
+
+<p>or <a href="https://github.com/JoanClaret/jcSlider/archive/master.zip">download the plugin</a> from GitHub</p>
+
+<h3>
+<a id="2-load-the-required-files" class="anchor" href="#2-load-the-required-files" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Load the required files</h3>
+
+<div class="highlight highlight-html"><pre><span class="pl-c">&lt;!-- jQuery library (served from Google) --&gt;</span>
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+
+<span class="pl-c">&lt;!-- Slider Javascript file --&gt;</span>
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>jquery.jcslider.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+
+<span class="pl-c">&lt;!-- animate CSS stylesheet library --&gt;</span>
+&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css<span class="pl-pds">"</span></span>&gt;</pre></div>
+
+<h3>
+<a id="3-create-the-html-markup" class="anchor" href="#3-create-the-html-markup" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. Create the HTML markup</h3>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">ul</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>jc-slider<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">li</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>jc-animation<span class="pl-pds">"</span></span>&gt;
+        [...]
+    &lt;/<span class="pl-ent">li</span>&gt;
+    &lt;<span class="pl-ent">li</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>jc-animation<span class="pl-pds">"</span></span>&gt;
+        [...]
+    &lt;/<span class="pl-ent">li</span>&gt;
+&lt;/<span class="pl-ent">ul</span>&gt;</pre></div>
+
+<h3>
+<a id="4-initialize-the-plugin" class="anchor" href="#4-initialize-the-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. Initialize the plugin</h3>
+
+<p>Default initialization</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-c1">document</span>).ready(<span class="pl-k">function</span>(){
+    $(<span class="pl-s"><span class="pl-pds">'</span>.jc-slider<span class="pl-pds">'</span></span>).jcSlider();
+});</pre></div>
+
+<p>Available options</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-c1">document</span>).ready(<span class="pl-k">function</span>(){
+    $(<span class="pl-s"><span class="pl-pds">'</span>.jc-slider<span class="pl-pds">'</span></span>).jcSlider({
+        animationIn<span class="pl-k">:</span>    <span class="pl-s"><span class="pl-pds">"</span>bounceInRight<span class="pl-pds">"</span></span>,
+        animationOut<span class="pl-k">:</span>   <span class="pl-s"><span class="pl-pds">"</span>bounceOutLeft<span class="pl-pds">"</span></span>, 
+        stopOnHover<span class="pl-k">:</span>    <span class="pl-c1">false</span> <span class="pl-c">// true by default</span>
+    });
+});</pre></div>
+
+<h3>
+<a id="available-animations" class="anchor" href="#available-animations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Available animations</h3>
+
+<ul>
+<li><code>bounce</code></li>
+<li><code>flash</code></li>
+<li><code>pulse</code></li>
+<li><code>rubberBand</code></li>
+<li><code>shake</code></li>
+<li><code>swing</code></li>
+<li><code>tada</code></li>
+<li><code>wobble</code></li>
+<li><code>jello</code></li>
+<li><code>bounceIn</code></li>
+<li><code>bounceInDown</code></li>
+<li><code>bounceInLeft</code></li>
+<li><code>bounceInRight</code></li>
+<li><code>bounceInUp</code></li>
+<li><code>bounceOut</code></li>
+<li><code>bounceOutDown</code></li>
+<li><code>bounceOutLeft</code></li>
+<li><code>bounceOutRight</code></li>
+<li><code>bounceOutUp</code></li>
+<li><code>fadeIn</code></li>
+<li><code>fadeInDown</code></li>
+<li><code>fadeInDownBig</code></li>
+<li><code>fadeInLeft</code></li>
+<li><code>fadeInLeftBig</code></li>
+<li><code>fadeInRight</code></li>
+<li><code>fadeInRightBig</code></li>
+<li><code>fadeInUp</code></li>
+<li><code>fadeInUpBig</code></li>
+<li><code>fadeOut</code></li>
+<li><code>fadeOutDown</code></li>
+<li><code>fadeOutDownBig</code></li>
+<li><code>fadeOutLeft</code></li>
+<li><code>fadeOutLeftBig</code></li>
+<li><code>fadeOutRight</code></li>
+<li><code>fadeOutRightBig</code></li>
+<li><code>fadeOutUp</code></li>
+<li><code>fadeOutUpBig</code></li>
+<li><code>flipInX</code></li>
+<li><code>flipInY</code></li>
+<li><code>flipOutX</code></li>
+<li><code>flipOutY</code></li>
+<li><code>lightSpeedIn</code></li>
+<li><code>lightSpeedOut</code></li>
+<li><code>rotateIn</code></li>
+<li><code>rotateInDownLeft</code></li>
+<li><code>rotateInDownRight</code></li>
+<li><code>rotateInUpLeft</code></li>
+<li><code>rotateInUpRight</code></li>
+<li><code>rotateOut</code></li>
+<li><code>rotateOutDownLeft</code></li>
+<li><code>rotateOutDownRight</code></li>
+<li><code>rotateOutUpLeft</code></li>
+<li><code>rotateOutUpRight</code></li>
+<li><code>hinge</code></li>
+<li><code>rollIn</code></li>
+<li><code>rollOut</code></li>
+<li><code>zoomIn</code></li>
+<li><code>zoomInDown</code></li>
+<li><code>zoomInLeft</code></li>
+<li><code>zoomInRight</code></li>
+<li><code>zoomInUp</code></li>
+<li><code>zoomOut</code></li>
+<li><code>zoomOutDown</code></li>
+<li><code>zoomOutLeft</code></li>
+<li><code>zoomOutRight</code></li>
+<li><code>zoomOutUp</code></li>
+<li><code>slideInDown</code></li>
+<li><code>slideInLeft</code></li>
+<li><code>slideInRight</code></li>
+<li><code>slideInUp</code></li>
+<li><code>slideOutDown</code></li>
+<li><code>slideOutLeft</code></li>
+<li><code>slideOutRight</code></li>
+<li><code>slideOutUp</code></li>
+</ul>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<pre><code>The MIT License (MIT)
+
+Copyright (c) 2015 Joan Claret
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</code></pre>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/JoanClaret/jcSlider">Jcslider</a> is maintained by <a href="https://github.com/JoanClaret">JoanClaret</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
 </html>
+
