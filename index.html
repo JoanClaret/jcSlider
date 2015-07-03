@@ -8,49 +8,20 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <!-- jQuery library (served from Google) -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-
-    <!-- Slider Javascript file -->
-    <script src="jquery.jcslider.js"></script>
-
-    <!-- animate CSS stylesheet library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
   </head>
   <body>
-
     <section class="page-header">
-      <div class="jc-slider">
-        <div class="jc-animation">
-          <h1 class="project-name">Jcslider</h1>
-          <h2 class="project-tagline">A responsive slider jQuery plugin with CSS animations</h2>
-          <a href="https://github.com/JoanClaret/jcSlider" class="btn">View on GitHub</a>
-          <a href="https://github.com/JoanClaret/jcSlider/zipball/master" class="btn">Download .zip</a>
-          <a href="https://github.com/JoanClaret/jcSlider/tarball/master" class="btn">Download .tar.gz</a>
-        </div>
-        <div class="jc-animation">
-          <h1 class="project-name">Jcslider</h1>
-          <h2 class="project-tagline">A responsive slider jQuery plugin with CSS animations</h2>
-          <a href="https://github.com/JoanClaret/jcSlider" class="btn">View on GitHub</a>
-          <a href="https://github.com/JoanClaret/jcSlider/zipball/master" class="btn">Download .zip</a>
-          <a href="https://github.com/JoanClaret/jcSlider/tarball/master" class="btn">Download .tar.gz</a>
-        </div>
-      </div>
-      <script type="text/javascript">
-        $(document).ready(function(){
-          $('.jc-slider').jcSlider({
-              animationIn:    "bounceInDown",
-              animationOut:   "bounceOutDown", 
-              loop:false
-          });
-        });
-      </script>
+      <h1 class="project-name">Jcslider</h1>
+      <h2 class="project-tagline">A responsive slider jQuery plugin with CSS animations</h2>
+      <a href="https://github.com/JoanClaret/jcSlider" class="btn">View on GitHub</a>
+      <a href="https://github.com/JoanClaret/jcSlider/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/JoanClaret/jcSlider/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
-
-
     <section class="main-content">
-      <h1>
+      <p><img src="http://joanclaret.github.io/jcSlider/img/github-cover.png" alt="jcSlide preview"></p>
+
+<h1>
 <a id="a-responsive-slider-jquery-plugin-with-css-animations" class="anchor" href="#a-responsive-slider-jquery-plugin-with-css-animations" aria-hidden="true"><span class="octicon octicon-link"></span></a>A responsive slider jQuery plugin with CSS animations</h1>
 
 <p>Animations from <a href="https://daneden.github.io/animate.css/">animate.css</a></p>
@@ -58,7 +29,8 @@
 <h2>
 <a id="online-demo" class="anchor" href="#online-demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Online demo</h2>
 
-<p><a href="http://joanclaret.github.io/jcSlider/demo">View online demo</a></p>
+<p><a href="http://joanclaret.github.io/jcSlider">Visit plugin website</a> or check <a href="http://joanclaret.github.io/jcSlider/demo/">online demo</a>.</p>
+
 <p><a href="http://www.appszoom.com/developers">Appszoom for developers</a> also uses it! Great!</p>
 
 <h2>
@@ -128,9 +100,10 @@ No need to calculate distances, sizes or whatever, only add and remove classes t
 
 <div class="highlight highlight-javascript"><pre>$(<span class="pl-c1">document</span>).ready(<span class="pl-k">function</span>(){
     $(<span class="pl-s"><span class="pl-pds">'</span>.jc-slider<span class="pl-pds">'</span></span>).jcSlider({
-        animationIn<span class="pl-k">:</span>    <span class="pl-s"><span class="pl-pds">"</span>bounceInRight<span class="pl-pds">"</span></span>,
-        animationOut<span class="pl-k">:</span>   <span class="pl-s"><span class="pl-pds">"</span>bounceOutLeft<span class="pl-pds">"</span></span>, 
-        stopOnHover<span class="pl-k">:</span>    <span class="pl-c1">false</span> <span class="pl-c">// true by default</span>
+        animationIn     <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>bounceInRight<span class="pl-pds">"</span></span>,
+        animationOut    <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>bounceOutLeft<span class="pl-pds">"</span></span>, 
+        stopOnHover     <span class="pl-k">:</span> <span class="pl-c1">false</span>, <span class="pl-c">// true by default</span>
+        loop            <span class="pl-k">:</span> <span class="pl-c1">false</span> <span class="pl-c">// true by default</span>
     });
 });</pre></div>
 
