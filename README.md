@@ -31,7 +31,7 @@ bower install --save jcslider
 Using npm
 
 ```bash
-npm install jcslider
+npm install jcslider --save
 ```
 
 Usage
