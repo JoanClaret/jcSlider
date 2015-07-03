@@ -45,15 +45,15 @@
             animationIn     : 'bounceInRight',
             animationOut    : 'bounceOutLeft',
             stopOnHover     : true,
-            loop            : false
+            loop            : true
         }, options );
 
-        var animateOut = 'animated ' + settings.animationOut;
-        var animateIn =  'animated ' + settings.animationIn;
-        var animationItem = $this.find('.jc-animation');
-        var animationItemsLength = animationItem.length;
-        var animationCurrentItem = 0;
-        var jcSliderInterval = null;
+        var animateOut = 'animated ' + settings.animationOut,
+            animateIn =  'animated ' + settings.animationIn,
+            animationItem = $this.find('.jc-animation'),
+            animationItemsLength = animationItem.length,
+            animationCurrentItem = 0,
+            jcSliderInterval = null;
 
 
         // Detect when animations (keyframes) end
