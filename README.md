@@ -6,7 +6,8 @@ Animations from [animate.css](https://daneden.github.io/animate.css/)
 Online demo
 -----------
 
-[Visit plugin website](http://joanclaret.github.io/jcSlider)
+[Visit plugin website](http://joanclaret.github.io/jcSlider) or check the [Online demo](http://joanclaret.github.io/jcSlider/demo/).
+[Appszoom for developers](http://www.appszoom.com/developers) also uses it! Great!
 
 
 What's the difference with other sliders?
