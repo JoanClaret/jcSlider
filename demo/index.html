@@ -54,6 +54,34 @@
                     </li>
                 </ul>
                 <!-- Slider end -->
+                <h2>Example 3:</h2>
+                <!-- Slider start -->
+                <ul class="jc-slider3">
+                    <li class="jc-animation">
+                        <img src="img/4.jpg" alt="1">
+                    </li>
+                    <li class="jc-animation">
+                        <img src="img/5.jpg" alt="2">
+                    </li>
+                    <li class="jc-animation">
+                        <img src="img/6.jpg" alt="3">
+                    </li>
+                </ul>
+                <!-- Slider end -->
+                <h2>Example 4:</h2>
+                <!-- Slider start -->
+                <ul class="jc-slider4">
+                    <li class="jc-animation">
+                        <img src="img/7.jpg" alt="1">
+                    </li>
+                    <li class="jc-animation">
+                        <img src="img/8.jpg" alt="2">
+                    </li>
+                    <li class="jc-animation">
+                        <img src="img/9.jpg" alt="3">
+                    </li>
+                </ul>
+                <!-- Slider end -->
             </section>
         </main>
 
@@ -73,6 +101,16 @@
                 $('.jc-slider2').jcSlider({
                     animationIn: 'zoomInUp',
                     animationOut: 'flipOutX',
+                    stopOnHover: false
+                });
+                $('.jc-slider3').jcSlider({
+                    animationIn: 'flipInX',
+                    animationOut: 'shake',
+                    stopOnHover: false
+                });
+                $('.jc-slider4').jcSlider({
+                    animationIn: 'zoomIn',
+                    animationOut: 'zoomOut',
                     stopOnHover: false
                 });
             });
