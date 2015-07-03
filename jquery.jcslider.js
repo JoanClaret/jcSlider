@@ -4,7 +4,6 @@
  * @copyright Copyright 2013-2015 Joan claret
  * @license   MIT
  * @author    Joan Claret Teruel <dpam23 at gmail dot com>
- * @version   0.0.3
  *
  * Licensed under The MIT License (MIT).
  * Copyright (c) Joan Claret Teruel <dpam23 at gmail dot com>
@@ -31,7 +30,7 @@
 
 ;(function($, document, window, undefined) {
 
-    "use strict";
+    'use strict';
 
     $.fn.jcSlider = function(options) {
 
@@ -43,9 +42,10 @@
         // get settings
         var settings = $.extend({
             // default settings
-            animationIn: "bounceInRight",
-            animationOut: "bounceOutLeft",
-            stopOnHover: true
+            animationIn     : 'bounceInRight',
+            animationOut    : 'bounceOutLeft',
+            stopOnHover     : true,
+            loop            : false
         }, options );
 
         var animateOut = 'animated ' + settings.animationOut;
@@ -53,23 +53,23 @@
         var animationItem = $this.find('.jc-animation');
         var animationItemsLength = animationItem.length;
         var animationCurrentItem = 0;
-        var jcSliderInterval = '';
+        var jcSliderInterval = null;
 
 
         // Detect when animations (keyframes) end
-        function whichAnimationEvent(){
+        function whichAnimationEvent() {
           var t,
-              el = document.createElement("fakeelement");
+              el = document.createElement('fakeelement');
 
           var animations = {
-            "animation"      : "animationend",
-            "OAnimation"     : "oAnimationEnd",
-            "MozAnimation"   : "animationend",
-            "WebkitAnimation": "webkitAnimationEnd"
+            'animation'      : 'animationend',
+            'OAnimation'     : 'oAnimationEnd',
+            'MozAnimation'   : 'animationend',
+            'WebkitAnimation': 'webkitAnimationEnd'
           };
 
-          for (t in animations){
-            if (el.style[t] !== undefined){
+          for (t in animations) {
+            if (el.style[t] !== undefined) {
               return animations[t];
             }
           }
@@ -78,18 +78,23 @@
 
 
         // main function
-        var jcSliderAnimation = function(){
+        var jcSliderAnimation = function() {
 
-            jcSliderInterval = setInterval(function() { 
+            jcSliderInterval = setInterval(function() {
+                
+                // stop animation if loop is false and we are on the last image
+                if (settings.loop === false && animationCurrentItem == (animationItemsLength -2)) {
+                    clearInterval(jcSliderInterval);
+                }
 
                 animationItem.eq(animationCurrentItem)
                 .removeClass(animateIn) // reset enter animation
                 .addClass(animateOut)   // exit animation
-                
+
                 // when exit animation is finished, move next item
                .one(animationEvent,
 
-                    function () {
+                    function() {
 
                         // move current item
                         animationItem.eq(animationCurrentItem)
@@ -98,7 +103,7 @@
 
                         // select next item
                         animationCurrentItem ++;
-                        if (animationCurrentItem == animationItemsLength){
+                        if (animationCurrentItem == animationItemsLength) {
                             animationCurrentItem = 0;
                         }
 
@@ -109,27 +114,23 @@
 
                     });
 
-            },  4000);
+            }, 4000);
         };
 
-        // Initialise the testimonial animation function
-        jcSliderAnimation(); 
+        // Initialise the animation function
+        jcSliderAnimation();
 
-        if(settings.stopOnHover === true){
+        if(settings.stopOnHover === true) {
 
             // Stop the animation on hover
             $this.hover(
-                function(){ 
-                    
-                        clearInterval(jcSliderInterval);
+                function() {
+                    clearInterval(jcSliderInterval);
                 },
                 function(){
                     jcSliderAnimation();
-            });
+                });
         }
-        
     };
-
 })(window.jQuery || window.Zepto || window.$, document, window);
-
 // Pending Zepto support
