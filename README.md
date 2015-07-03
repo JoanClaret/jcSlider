@@ -1,3 +1,6 @@
+![jcSlide preview](http://joanclaret.github.io/jcSlider/img/github-cover.png)
+
+
 A responsive slider jQuery plugin with CSS animations
 ========================================
 Animations from [animate.css](https://daneden.github.io/animate.css/)
