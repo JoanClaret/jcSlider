@@ -45,7 +45,7 @@
             animationIn     : 'bounceInRight',
             animationOut    : 'bounceOutLeft',
             stopOnHover     : true,
-            loop            : false
+            loop            : true
         }, options );
 
         var animateOut = 'animated ' + settings.animationOut;
