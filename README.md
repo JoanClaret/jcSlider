@@ -47,21 +47,34 @@ npm install jcslider
 or [download the plugin](https://github.com/JoanClaret/jcSlider/archive/master.zip) from GitHub
 
 
-### 2. Load the required files
+### 2. Load the required javascript files
+
+
+Load them in the html
 
 ```html
 <!-- jQuery library (served from Google) -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
-<!-- Slider Javascript file -->
-<script src="jquery.jcslider.js"></script>
+<!-- jcSlider Javascript file -->
+<script src="jquery.jcslider.min.js"></script>
+```
 
+or use Browserify
+
+```javascript
+require('jcSlider');
+```
+
+### 3. Load the CSS animations
+
+```html
 <!-- animate CSS stylesheet library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
 ```
 
 
-### 3. Create the HTML markup
+### 4. Create the HTML markup
 
 ```html
 <ul class="jc-slider">
@@ -74,27 +87,31 @@ or [download the plugin](https://github.com/JoanClaret/jcSlider/archive/master.z
 </ul>
 ```
 
-### 4. Initialize the plugin
+### 5. Initialize the plugin
 
 Default initialization
 
 ```javascript
-$(document).ready(function(){
-    $('.jc-slider').jcSlider();
-});
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.jc-slider').jcSlider();
+    });
+</script>
 ```
 
 Available options
 
 ```javascript
-$(document).ready(function(){
-    $('.jc-slider').jcSlider({
-        animationIn     : "bounceInRight",
-        animationOut    : "bounceOutLeft", 
-        stopOnHover     : false, // true by default
-        loop            : false // true by default
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.jc-slider').jcSlider({
+            animationIn     : "bounceInRight",
+            animationOut    : "bounceOutLeft", 
+            stopOnHover     : false, // true by default
+            loop            : false // true by default
+        });
     });
-});
+</script>
 ```
 
 ### Available animations
