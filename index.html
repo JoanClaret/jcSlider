@@ -64,19 +64,28 @@ No need to calculate distances, sizes or whatever, only add and remove classes t
 <p>or <a href="https://github.com/JoanClaret/jcSlider/archive/master.zip">download the plugin</a> from GitHub</p>
 
 <h3>
-<a id="2-load-the-required-files" class="anchor" href="#2-load-the-required-files" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Load the required files</h3>
+<a id="2-load-the-required-javascript-files" class="anchor" href="#2-load-the-required-javascript-files" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Load the required javascript files</h3>
+
+<p>Load them in the html</p>
 
 <div class="highlight highlight-html"><pre><span class="pl-c">&lt;!-- jQuery library (served from Google) --&gt;</span>
 &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
 
-<span class="pl-c">&lt;!-- Slider Javascript file --&gt;</span>
-&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>jquery.jcslider.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+<span class="pl-c">&lt;!-- jcSlider Javascript file --&gt;</span>
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>jquery.jcslider.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
 
-<span class="pl-c">&lt;!-- animate CSS stylesheet library --&gt;</span>
+<p>or use Browserify</p>
+
+<div class="highlight highlight-javascript"><pre><span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>jcSlider<span class="pl-pds">'</span></span>);</pre></div>
+
+<h3>
+<a id="3-load-the-css-animations" class="anchor" href="#3-load-the-css-animations" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. Load the CSS animations</h3>
+
+<div class="highlight highlight-html"><pre><span class="pl-c">&lt;!-- animate CSS stylesheet library --&gt;</span>
 &lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css<span class="pl-pds">"</span></span>&gt;</pre></div>
 
 <h3>
-<a id="3-create-the-html-markup" class="anchor" href="#3-create-the-html-markup" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. Create the HTML markup</h3>
+<a id="4-create-the-html-markup" class="anchor" href="#4-create-the-html-markup" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. Create the HTML markup</h3>
 
 <div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">ul</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>jc-slider<span class="pl-pds">"</span></span>&gt;
     &lt;<span class="pl-ent">li</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>jc-animation<span class="pl-pds">"</span></span>&gt;
@@ -88,24 +97,28 @@ No need to calculate distances, sizes or whatever, only add and remove classes t
 &lt;/<span class="pl-ent">ul</span>&gt;</pre></div>
 
 <h3>
-<a id="4-initialize-the-plugin" class="anchor" href="#4-initialize-the-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. Initialize the plugin</h3>
+<a id="5-initialize-the-plugin" class="anchor" href="#5-initialize-the-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>5. Initialize the plugin</h3>
 
 <p>Default initialization</p>
 
-<div class="highlight highlight-javascript"><pre>$(<span class="pl-c1">document</span>).ready(<span class="pl-k">function</span>(){
-    $(<span class="pl-s"><span class="pl-pds">'</span>.jc-slider<span class="pl-pds">'</span></span>).jcSlider();
-});</pre></div>
+<div class="highlight highlight-javascript"><pre><span class="pl-k">&lt;</span>script type<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span>
+    $(<span class="pl-c1">document</span>).ready(<span class="pl-k">function</span>(){
+        $(<span class="pl-s"><span class="pl-pds">'</span>.jc-slider<span class="pl-pds">'</span></span>).jcSlider();
+    });
+<span class="pl-k">&lt;</span>/script<span class="pl-k">&gt;</span></pre></div>
 
 <p>Available options</p>
 
-<div class="highlight highlight-javascript"><pre>$(<span class="pl-c1">document</span>).ready(<span class="pl-k">function</span>(){
-    $(<span class="pl-s"><span class="pl-pds">'</span>.jc-slider<span class="pl-pds">'</span></span>).jcSlider({
-        animationIn     <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>bounceInRight<span class="pl-pds">"</span></span>,
-        animationOut    <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>bounceOutLeft<span class="pl-pds">"</span></span>, 
-        stopOnHover     <span class="pl-k">:</span> <span class="pl-c1">false</span>, <span class="pl-c">// true by default</span>
-        loop            <span class="pl-k">:</span> <span class="pl-c1">false</span> <span class="pl-c">// true by default</span>
+<div class="highlight highlight-javascript"><pre><span class="pl-k">&lt;</span>script type<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span>
+    $(<span class="pl-c1">document</span>).ready(<span class="pl-k">function</span>(){
+        $(<span class="pl-s"><span class="pl-pds">'</span>.jc-slider<span class="pl-pds">'</span></span>).jcSlider({
+            animationIn     <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>bounceInRight<span class="pl-pds">"</span></span>,
+            animationOut    <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>bounceOutLeft<span class="pl-pds">"</span></span>, 
+            stopOnHover     <span class="pl-k">:</span> <span class="pl-c1">false</span>, <span class="pl-c">// true by default</span>
+            loop            <span class="pl-k">:</span> <span class="pl-c1">false</span> <span class="pl-c">// true by default</span>
+        });
     });
-});</pre></div>
+<span class="pl-k">&lt;</span>/script<span class="pl-k">&gt;</span></pre></div>
 
 <h3>
 <a id="available-animations" class="anchor" href="#available-animations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Available animations</h3>
