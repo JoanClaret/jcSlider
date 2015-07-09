@@ -1,6 +1,6 @@
 {
   "name": "jcSlider",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "homepage": "https://github.com/JoanClaret/jcSlider",
   "authors": [
     "Joan Claret <dpam23@gmail.com>"
@@ -12,13 +12,17 @@
     "animate.css": "^3.2.5"
   },
   "keywords": [
-    "jquery",
-    "plugin",
-    "addon",
     "slider",
-    "animate",
+    "css",
+    "css3",
     "responsive",
-    "css"
+    "testimonials",
+    "animations",
+    "animate",
+    "jQuery",
+    "plugin",
+    "jquery-plugin",
+    "ecosystem:jquery"
   ],
   "license": "MIT",
   "ignore": [
