@@ -35,13 +35,13 @@ Installation
 Using bower
 
 ```bash
-bower install --save jcslider
+bower install jcslider --save 
 ```
 
 Using npm
 
 ```bash
-npm install jcslider
+npm install jcslider --save 
 ```
 
 or [download the plugin](https://github.com/JoanClaret/jcSlider/archive/master.zip) from GitHub
