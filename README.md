@@ -114,6 +114,10 @@ Available options
 </script>
 ```
 
+### 6. Star the repository
+★ Star [this repo](https://github.com/JoanClaret/jcSlider) in order to stay updated with news about this plugin
+
+
 ### Available animations
 
 * `bounce`
