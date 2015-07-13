@@ -1,6 +1,6 @@
 {
   "name": "jcslider",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "A responsive slider jQuery plugin with CSS animations from animate.css",
   "main": "jquery.jcslider.js",
   "repository": {

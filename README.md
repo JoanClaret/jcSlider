@@ -9,7 +9,7 @@ Animations from [animate.css](https://daneden.github.io/animate.css/)
 Online demo
 -----------
 
-[Visit plugin website](http://joanclaret.github.io/jcSlider) or check [online demo](http://joanclaret.github.io/jcSlider/demo/).
+[Visit plugin website](http://joanclaret.github.io/jcSlider).
 
 [Appszoom for developers](http://www.appszoom.com/developers) also uses it! Great!
 
