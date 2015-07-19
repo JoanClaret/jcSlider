@@ -35,6 +35,7 @@
     $.fn.jcSlider = function(options) {
 
         var $this = $(this);
+        $this.css({'overflow':'hidden'});
 
         // hide all items excepting first
         $this.find('.jc-animation:not(:first)').hide();
