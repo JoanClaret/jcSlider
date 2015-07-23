@@ -114,8 +114,17 @@ Available options
 </script>
 ```
 
-### 6. Follow the repository
-★ Star and watch [this repo](https://github.com/JoanClaret/jcSlider) in order to stay updated with news about this plugin
+### Follow the repository
+★ Star and watch [this repo](https://github.com/JoanClaret/html5-canvas-animation) in order to stay updated with news about this plugin
+
+### Other useful  plugins
+* [html5 canvas animation](http://joanclaret.github.io/html5-canvas-animation): 3D lines animation with three.js 
+* [slide And swipe menu](http://joanclaret.github.io/slide-and-swipe-menu): A sliding swipe menu that works with touchSwipe library. 
+* [jquery dynamic max height](http://joanclaret.github.io/jquery-dynamic-max-height) : Dynamic max height plugin for jQuery with CSS animation
+
+
+
+
 
 
 ### Available animations
