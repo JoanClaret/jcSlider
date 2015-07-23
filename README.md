@@ -115,7 +115,7 @@ Available options
 ```
 
 ### Follow the repository
-★ Star and watch [this repo](https://github.com/JoanClaret/html5-canvas-animation) in order to stay updated with news about this plugin
+★ Star and watch [this repo](https://github.com/JoanClaret/jcSlider) in order to stay updated with news about this plugin
 
 ### Available animations
 
