@@ -222,6 +222,7 @@ License
     
 Other useful  plugins
 ----------------------
+* [Maximum Characters limit exceeded warning](https://github.com/JoanClaret/max-char-limit-warning): Get a warning when the maximum char limit has been exceeded with a simple jQuery plugin
 * [html5 canvas animation](http://joanclaret.github.io/html5-canvas-animation): 3D lines animation with three.js 
 * [slide and swipe menu](http://joanclaret.github.io/slide-and-swipe-menu): A sliding swipe menu that works with touchSwipe library. 
 * [jquery dynamic max height](http://joanclaret.github.io/jquery-dynamic-max-height) : Dynamic max height plugin for jQuery with CSS animation
