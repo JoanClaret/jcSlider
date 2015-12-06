@@ -5,6 +5,8 @@ A responsive slider jQuery plugin with CSS animations
 ========================================
 Animations from [animate.css](https://daneden.github.io/animate.css/)
 
+[![npm version](https://badge.fury.io/js/jcslider.svg)](https://badge.fury.io/js/jcslider)
+
 
 Online demo
 -----------
